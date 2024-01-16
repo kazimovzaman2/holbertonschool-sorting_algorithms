@@ -2,7 +2,7 @@
 
 
 /**
- * selection_sort - sorts a doubly linked list
+ * selection_sort - sorts an arrray
  * @array: array to be sorted
  * @size: size of the array
  *
