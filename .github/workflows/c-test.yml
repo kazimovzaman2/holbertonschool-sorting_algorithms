@@ -28,7 +28,7 @@ jobs:
 
     - name: Build
       run: |
-        gcc -o test 0-bubble_sort.c 1-insertion_sort_list.c 2-selection_sort.c
+        gcc -o test 0-bubble_sort.c 1-insertion_sort_list.c 2-selection_sort.c print_array.c print_list.c
 
     - name: Test
       run: |
