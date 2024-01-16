@@ -28,8 +28,8 @@ jobs:
 
     - name: Build
       run: |
-        gcc -o test 0-bubble_sort.c 1-insertion_sort_list.c 2-selection_sort.c print_array.c print_list.c
+        gcc -o test 0-bubble_sort.c 1-insertion_sort_list.c 2-selection_sort.c print_array.c print_list.c 2-main.c
 
     - name: Test
       run: |
-        ./your_executable_file
+        ./test
