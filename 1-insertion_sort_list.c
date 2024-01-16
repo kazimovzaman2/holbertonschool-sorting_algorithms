@@ -13,7 +13,7 @@ void insertion_sort_list(listint_t **list)
 
 	if ((!*list) || (!(*list)->next))
 		return;
-	
+
 	curr = (*list)->next;
 	while (curr)
 	{
@@ -24,14 +24,14 @@ void insertion_sort_list(listint_t **list)
 			prev = curr->prev;
 			if (curr->next != NULL)
 				curr->next->prev = prev;
-			
+
 			prev->next = curr->next;
 			curr->next = prev;
 			curr->prev = prev->prev;
 
 			if (prev->prev != NULL)
 				prev->prev->next = curr;
-			
+
 			prev->prev = curr;
 
 			if (curr->prev == NULL)
